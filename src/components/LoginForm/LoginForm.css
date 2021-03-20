@@ -1,0 +1,56 @@
+.loginContainer{
+    width:100%;
+    left: 0;
+    z-index:2;
+    transition : opacity 0.3s;
+}
+
+.authContainer.right-panel-active .loginContainer {
+    transform: translateX(-100%);
+}
+@import url('https://fonts.googleapis.com/css?family=Courier+Prime&display=swap');
+
+:root {
+  /* Var Body */
+  --body-color: #333333;
+  --body-bg-color: #FFFAF0;
+  --body-font-family: 'Courier Prime', sans-serif;
+  
+  /* Var Footer */
+  --copyright-color: #CCCCCC;
+  --copyright-bg-color: #000000;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+a { color: black; } 
+.names
+{
+    display:inline;
+    color: #FFFAF0 !important;
+}
+body {
+	background-color: var(--body-bg-color);
+	color: var(--body-color);
+	font-family: var(--body-font-family);
+  text-align: center;
+	margin: 0;
+}
+
+.copyright {
+  padding: 5px 0;
+  color: white;
+  background-color: black;
+}
+
+@media(min-width:768px){
+    .loginContainer{
+        width:50%;
+    }
+    .authContainer.right-panel-active .loginContainer {
+        transform: translateX(100%);
+    }
+    
+}

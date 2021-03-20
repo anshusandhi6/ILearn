@@ -1,0 +1,23 @@
+.pdfPreview{
+    width:100%;
+
+}
+
+.pdfPreview__Container{
+    width:fit-content;
+    margin: 0 auto;
+    padding:10px;
+    border:5px solid black;
+}
+
+.react-pdf__Page__canvas{
+    
+    width:250px!important;
+    height:450px!important;
+}
+
+@media(min-width:500px){
+    .react-pdf__Page__canvas{
+        width: 350px!important;
+    }
+}

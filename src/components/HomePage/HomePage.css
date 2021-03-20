@@ -1,0 +1,156 @@
+.homePageContainer{
+    margin-top: calc(72px + 4rem);
+    margin-left: auto;
+    margin-right:auto;
+    text-align: center;
+    width:100%;
+}
+
+.homePageContainer > h1 {
+    font-weight: 500;
+}
+@import url('https://fonts.googleapis.com/css?family=Courier+Prime&display=swap');
+
+:root {
+  /* Var Body */
+  --body-color: #333333;
+  --body-bg-color: #FFFAF0;
+  --body-font-family: 'Courier Prime', sans-serif;
+  
+  /* Var Footer */
+  --copyright-color: #CCCCCC;
+  --copyright-bg-color: #000000;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.ui-input-container {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 4px;
+    width: 50%;
+    margin: 0 auto;
+  }
+  .ui-input-container h2 {
+    font-family: sans-serif;
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+  .ui-form-input-container {
+    position: relative;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    display: block;
+  }
+  .ui-form-input {
+    padding: 13px 15px;
+    border-radius: 8px;
+    border: 2px solid #1a73e8;
+    outline: 0;
+    width: 100%;
+  }
+  
+  .form-input-label {
+    position: absolute;
+    top: -7px;
+    left: 10px;
+    color: #1a73e8;
+    font-size: 0.85rem;
+    padding-right: 0.33rem;
+    padding-left: 0.33rem;
+    background: #fff;
+    transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+    font-family: sans-serif;
+    text-transform: capitalize;
+  }
+  
+  .ui-form-btn {
+    padding: 13px 15px;
+    border-radius: 8px;
+    background: #1a73e8;
+    outline: 0;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: white;
+    font-weight: 500;
+  }
+  
+  .error .ui-form-input,
+  .error .form-input-label {
+    border-color: #d50000;
+    color: #d50000;
+  }
+  
+  textarea {
+    min-height: 6em;
+    max-height: 50vh;
+    width: 100%;
+  }
+  
+a { color: black; } 
+.names
+{
+    display:inline;
+    color: #FFFAF0 !important;
+}
+body {
+	background-color: var(--body-bg-color);
+	color: var(--body-color);
+	font-family: var(--body-font-family);
+  text-align: center;
+	margin: 0;
+}
+
+.copyright {
+  padding: 5px 0;
+  color: white;
+  background-color: black;
+}
+
+.homePageContainer > p {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.homePageContainer__customFileUpload > input{
+    margin-top:2rem;
+    display:none
+}
+.button1 {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+.homePageContainer__customFileUpload{
+    width:200px;
+    border:1px solid rgb(255, 97, 76);
+    padding:2rem;
+    font-size: 1.3rem;
+    display:block;
+    margin:2rem auto;
+    border-radius: 10px;
+    color:white;
+    font-weight: bolder;
+    transition:all 0.5s ease-in;
+    letter-spacing: 1px;
+    cursor:pointer;
+    background:rgb(255, 97, 76);
+}
+
+.homePageContainer__customFileUpload:hover{
+    background:black;
+    border: 1px solid black;
+}

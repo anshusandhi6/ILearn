@@ -1,0 +1,150 @@
+.navbar {
+    width: 100vw;
+    height:72px;
+    position:fixed;
+    top:0;
+    box-shadow: 0 4px 12px 0 rgba(0,0,0,.2);
+    z-index: 1000;
+    background: white;
+    display:grid;
+    place-items: center;
+}
+
+.nav{
+    width:95%;
+    display:flex;
+    align-items: center;
+    /* justify-content:space-between */
+}
+
+.navbar-brand{
+    text-decoration:none;
+    font-size:2rem;
+    color:black;
+    font-weight:600
+}
+
+.nav-link{
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.nav-link-container{
+    display:none;
+}
+
+
+
+.menu-btn{
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 35px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    /* padding: -1px; */
+    margin-right: 1rem;
+    /* border: 3px solid black; */
+}
+
+.menu-btn-burger{
+   width: 30px;
+   height: 4px;
+   background: black;
+   border-radius: 5px;
+   transition: all 0.5s ease-in-out;
+   position: relative;
+}
+
+.horizontal{
+   margin-top: 5px;
+}
+.diagonal-part-2{
+   margin-top: 5px;
+}
+
+.menu-btn.open .horizontal{
+   transform: translateX(-30px);
+   background: transparent;
+}
+.menu-btn.open .diagonal-part-2{
+   transform: translateY(-9px) rotate(-45deg);
+}
+.menu-btn.open .diagonal-part-1{
+   transform: translateY(10px) rotate(45deg);
+}
+
+.control-bar{
+    height: calc(100vh - 72px);
+    width: 50vw;
+    position: fixed;
+    top: 72px;
+    background: white;
+    z-index: 1000;
+    box-shadow: 5px 10px 20px 0 rgb(0 0 0 / 30%);
+    transform: translateX(-100%);
+    transition: 0.5s ease-in-out;
+}
+
+.control-bar.on-screen{
+    transform: translateX(0%)
+}
+
+.control-bar-home{
+    padding: 2rem;
+    background: linear-gradient(to right,#ff416c,rgb(255 19 70));
+    font-size: 1.2rem;
+    color:white;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.control-bar-home .fa-home{
+    margin-right:10px;
+}
+
+.control-bar-category-container{
+    margin:5px 2rem;
+    font-size:1.2rem;
+    font-weight: 500
+}
+
+/* .control-bar-category{
+    margin-bottom:1rem
+} */
+
+.control-bar-link{
+    text-decoration: none;
+    color:inherit;
+    display: block;
+    margin-bottom:5px
+}
+
+@media(min-width:768px){
+    .nav-link-container{
+        display: block;
+    }
+    .menu-btn{
+        display: none;
+    }
+    .nav{
+        justify-content:space-between
+    }
+    
+}
+
+
+@media(min-width:500px){
+    .control-bar{
+        width:40vw;
+    }    
+}
